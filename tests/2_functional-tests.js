@@ -73,7 +73,7 @@ suite("Functional Tests", function () {
         })
         .end((err, res) => {
           assert.equal(res.status, 200);
-          assert.equal(res.text, "success");
+          assert.equal(res.text, "reported");
           done();
         });
     });
@@ -174,7 +174,7 @@ suite("Functional Tests", function () {
         })
         .end((err, res) => {
           assert.equal(res.status, 200);
-          assert.equal(res.text, "success");
+          assert.equal(res.text, "reported");
           done();
         });
     });

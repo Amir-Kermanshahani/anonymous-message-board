@@ -56,7 +56,7 @@ exports.reportThread = async (req, res) => {
   const { thread_id } = req.body;
   try {
     await Thread.findByIdAndUpdate(thread_id, { reported: true });
-    res.send('success');
+    res.send('reported');
   } catch (err) {
     res.status(500).send("Server error");
   }
