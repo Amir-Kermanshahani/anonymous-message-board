@@ -73,7 +73,7 @@ exports.reportReply = async (req, res) => {
     reply.reported = true;
     await thread.save();
 
-    res.send("reported");
+    res.send('success');
   } catch (err) {
     res.status(500).send("Server error");
   }
